@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+header .toppest {
+  background-color: white;
+  margin: 0 auto;
+  width: 95%;
+  padding: 0rem 1rem;
+  display: flex;
+  position: relative;
+  top: 1rem;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+header .red {
+  color: red;
+}
+header .blue {
+  color: blue;
+  cursor: pointer;
+}
+header .sound {
+  padding: 7px;
+  background-color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+}
+header .link {
+  padding: 7px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+header .link nav,
+header .link .coming-soon {
+  color: black;
+  font-weight: 600;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fff;
+  border-radius: 5px;
+}
+header .link nav a {
+  margin-left: 1rem;
+}
+header .link a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+header .title {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  text-transform: uppercase;
+}
+header .title h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  word-spacing: -2px;
+  margin-bottom: 1rem;
+}
+header .title h5 {
+  font-size: 1rem;
+}
+header .title p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  width: 40rem;
+  line-height: 1.5rem;
+}
+header .title .gif {
+  padding: 3rem 1rem 1rem 1rem;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  margin: 3rem auto 0;
+  width: 70%;
+  height: 90vh;
+  position: relative;
+}
+header .title .gif .dot-main {
+  height: 30px;
+  width: 145px;
+  position: absolute;
+  top: 5px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .title .gif .dot-main .dot {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+header .title .gif .dot-main .dot:nth-child(1) {
+  background-color: #979797;
+}
+header .title .gif .dot-main .dot:nth-child(2) {
+  background-color: #b3b1b1;
+}
+header .title .gif .dot-main .dot:nth-child(3) {
+  background-color: #e0dcdc;
+}
+header .title .gif img {
+  width: 100%;
+  height: 100%;
+}
+header .email {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+}
+header .email p {
+  font-size: 1rem;
+}
+header .time-box {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+header .box {
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  animation: flash 0.5s linear infinite;
+}
+
+.about-me {
+  font-weight: 200;
+  letter-spacing: -0.05em;
+  height: auto;
+  color: black;
+}
+.about-me .container {
+  padding: 10rem 0;
+}
+.about-me .container .aboutcontainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.about-me .container .aboutcontainer .image {
+  width: 60%;
+  background-color: black;
+}
+.about-me .container .aboutcontainer .image img {
+  width: 100%;
+  height: 100%;
+}
+.about-me .container .aboutcontainer .aboutmain {
+  width: 45%;
+  margin-left: 2rem;
+}
+.about-me .container .aboutcontainer .aboutmain header p {
+  position: relative;
+  color: #979797;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.about-me .container .aboutcontainer .aboutmain header p span {
+  font-size: 4rem;
+  position: absolute;
+  left: -1rem;
+  top: -2rem;
+  font-weight: 800;
+  z-index: -1;
+  color: #ece8e8;
+}
+.about-me .container .aboutcontainer .aboutmain header h1 {
+  font-size: 3rem;
+  line-height: 5rem;
+  font-weight: 800;
+}
+.about-me .container .aboutcontainer .aboutmain header h1 span {
+  color: blue;
+}
+.about-me h1 {
+  font-size: 4rem;
+}
+.about-me p {
+  margin-bottom: 2rem;
+  font-size: clamp(20px, 1rem, 50px);
+  font-weight: 700;
+}
+.about-me .revealtext {
+  opacity: 0.1;
+}
+
+.reasons {
+  margin-bottom: 3rem;
+}
+.reasons h1 {
+  font-size: 13rem;
+  font-weight: 900;
+  padding-left: 2rem;
+  letter-spacing: 1rem;
+}
+.reasons .reason {
+  width: 100%;
+  height: 200vh;
+  position: sticky;
+  top: 0;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 10px 10px 10px rgba(255, 255, 255, 0.5), -10px -10px 10px rgba(255, 255, 255, 0.5), 10px -10px 10px rgba(255, 255, 255, 0.5), -10px 10px 10px rgba(255, 255, 255, 0.5);
+  background-image: url(/bg1_auto_x2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.reasons .reason h1 {
+  font-size: 7rem;
+  text-align: center;
+  z-index: 1;
+  padding-top: 7rem;
+  font-weight: 800;
+}
+.reasons .reason p {
+  padding: 1rem 13rem;
+  line-height: 20px;
+}
+.reasons .reason:nth-child(2) {
+  top: 5%;
+  height: 140vh;
+}
+.reasons .reason:nth-child(3) {
+  top: 10%;
+  height: 160vh;
+}
+.reasons .reason:nth-child(3) h1 {
+  line-height: 6rem;
+}
+.reasons .reason:nth-child(4) {
+  top: 15%;
+  height: 200vh;
+}
+.reasons .reason:nth-child(5) {
+  top: 20%;
+}
+.reasons .reason::before {
+  content: "";
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.project {
+  height: 100vh;
+}
+.project h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-left: 2rem;
+  letter-spacing: 1rem;
+}
+.project main {
+  background-color: black;
+  height: auto;
+  color: white;
+}
+.project main .container {
+  padding-top: 4rem;
+  position: relative;
+  height: inherit;
+}
+.project main h1 {
+  text-transform: capitalize;
+  font-size: 6rem;
+}
+.project main h1 span {
+  width: 100px;
+  display: inline-block;
+}
+.project main h1 span img {
+  width: 100%;
+}
+.project main .hold {
+  position: absolute;
+  left: 7rem;
+}
+.project main p {
+  position: absolute;
+  bottom: 3rem;
+  width: 30rem;
+}
+.project main h5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.project main .color-animated {
+  background-color: rgb(218, 52, 52);
+  width: 25rem;
+  height: 33rem;
+  position: relative;
+  overflow: hidden;
+  left: 50rem;
+  top: -9rem;
+}
+.project main .color-animated .img {
+  background-image: url(/bg4.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project main .color-animated .a {
+  background-size: 100% 100%;
+  filter: hue-rotate(72deg);
+}
+.project main .color-animated .b {
+  background-size: 105% 105%;
+  filter: hue-rotate(144deg);
+}
+.project main .color-animated .c {
+  background-size: 110% 110%;
+  filter: hue-rotate(216deg);
+}
+.project main .color-animated .d {
+  background-size: 115% 115%;
+  filter: hue-rotate(288deg);
+}
+@keyframes a {
+  from {
+    -webkit-clip-path: inset(0 80% 80% 0);
+            clip-path: inset(0 80% 80% 0);
+  }
+  25% {
+    -webkit-clip-path: inset(0 20% 80% 0);
+            clip-path: inset(0 20% 80% 0);
+  }
+  50% {
+    -webkit-clip-path: inset(0 20% 20% 0);
+            clip-path: inset(0 20% 20% 0);
+  }
+  75% {
+    -webkit-clip-path: inset(0 80% 20% 0);
+            clip-path: inset(0 80% 20% 0);
+  }
+  to {
+    filter: hue-rotate(144deg) contrast(1.5);
+    -webkit-clip-path: inset(0 80% 80% 0);
+            clip-path: inset(0 80% 80% 0);
+  }
+}
+@keyframes b {
+  from {
+    -webkit-clip-path: inset(0 0 80% 20%);
+            clip-path: inset(0 0 80% 20%);
+  }
+  25% {
+    -webkit-clip-path: inset(0 0 80% 80%);
+            clip-path: inset(0 0 80% 80%);
+  }
+  50% {
+    -webkit-clip-path: inset(0 0 20% 80%);
+            clip-path: inset(0 0 20% 80%);
+  }
+  75% {
+    -webkit-clip-path: inset(0 0 20% 20%);
+            clip-path: inset(0 0 20% 20%);
+  }
+  to {
+    filter: hue-rotate(216deg) contrast(1.5);
+    -webkit-clip-path: inset(0 0 80% 20%);
+            clip-path: inset(0 0 80% 20%);
+  }
+}
+@keyframes c {
+  from {
+    -webkit-clip-path: inset(20% 80% 0 0);
+            clip-path: inset(20% 80% 0 0);
+  }
+  25% {
+    -webkit-clip-path: inset(20% 20% 0 0);
+            clip-path: inset(20% 20% 0 0);
+  }
+  50% {
+    -webkit-clip-path: inset(80% 20% 0 0);
+            clip-path: inset(80% 20% 0 0);
+  }
+  75% {
+    -webkit-clip-path: inset(80% 80% 0 0);
+            clip-path: inset(80% 80% 0 0);
+  }
+  to {
+    filter: hue-rotate(218deg) contrast(1.5);
+    -webkit-clip-path: inset(20% 80% 0 0);
+            clip-path: inset(20% 80% 0 0);
+  }
+}
+@keyframes d {
+  from {
+    -webkit-clip-path: inset(20% 0 0 20%);
+            clip-path: inset(20% 0 0 20%);
+  }
+  25% {
+    -webkit-clip-path: inset(20% 0 0 80%);
+            clip-path: inset(20% 0 0 80%);
+  }
+  50% {
+    -webkit-clip-path: inset(80% 0 0 80%);
+            clip-path: inset(80% 0 0 80%);
+  }
+  75% {
+    -webkit-clip-path: inset(80% 0 0 20%);
+            clip-path: inset(80% 0 0 20%);
+  }
+  to {
+    filter: hue-rotate(72deg) contrast(1.5);
+    -webkit-clip-path: inset(20% 0 0 20%);
+            clip-path: inset(20% 0 0 20%);
+  }
+}
+.project .a {
+  animation: a 3s infinite;
+}
+.project .b {
+  animation: b 3s infinite;
+}
+.project .c {
+  animation: c 3s infinite;
+}
+.project .d {
+  animation: d 3s infinite;
+}
+
+/* splach screen */
+.preloader {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: 1s;
+  background-color: #fff;
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  z-index: 2;
+  width: 100vw;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.logo.active {
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.7s;
+}
+
+.logo.fade {
+  bottom: 250px;
+  opacity: 0;
+  transition: ease-in-out 0.7s;
+}
+
+.preloader {
+  z-index: 999;
+}
+.preloader .counter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  opacity: 1;
+  mix-blend-mode: difference;
+}
+.preloader .counter .faded {
+  bottom: 250px;
+  transition: ease-in-out 0.7s;
+}
+.preloader .loader {
+  position: absolute;
+  background-color: black;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+@keyframes flash {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    opacity: 1;
+    background-color: red;
+  }
+}/*# sourceMappingURL=main.css.map */
