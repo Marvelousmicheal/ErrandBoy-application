@@ -1,17 +1,17 @@
-const intro = document.querySelector(".intro");
 const logo = document.querySelector("logo-header");
 const logoSpan = document.querySelectorAll(".logo");
-const text = document.getElementById("studio");
+
 ///////////////////////////////////////////
 let counter = document.querySelector(".counter");
 let loader = document.querySelector(".loader");
 let preloader = document.querySelector(".preloader");
+let visit = document.querySelector(".see");
 let count = 0;
 ///////////////////////////////////////////////
 const mysound = document.querySelector("#mysound");
 const play = document.querySelector(".blue");
 const dance = document.querySelector(".dance");
-let isPlaying = true;
+let isPlaying = false;
 /////////////////////////////////////////
 let paragraphs = [...document.querySelectorAll(".disappear")];
 let spans = [];
@@ -24,19 +24,28 @@ window.addEventListener("DOMContentLoaded", () => {
         span.classList.add("active");
       }, (idx + 1) * 2000);
     });
+  });
 
+  const clearscreen = () => {
     setTimeout(() => {
       logoSpan.forEach((span, idx) => {
         setTimeout(() => {
           span.classList.add("fade");
-        }, (idx + 1) * 500);
+        }, (idx + 1) * 100);
       });
-    }, 6000);
+    }, 600);
+    mysound.play();
+
+    play.textContent = "Cancel";
+    play.style.color = "green";
+    dance.textContent = "Silence😟";
 
     setTimeout(() => {
       preloader.style.top = "-100vh";
-    }, 8000);
-  });
+    }, 1200);
+  };
+
+  visit.addEventListener("click", clearscreen);
 
   let counterfunction = setInterval(() => {
     if (count < 101) {
@@ -51,16 +60,16 @@ window.addEventListener("DOMContentLoaded", () => {
 ///////////////////////////////////////////////////
 
 const soundtrack = () => {
-  if (isPlaying) {
-    play.textContent = "Cancel";
-    play.style.color = "green";
-    dance.textContent = "Silence😟";
-    mysound.play();
-  } else {
+  if (!isPlaying) {
     play.textContent = "Button😏";
     play.style.color = "blue";
     dance.textContent = "dancing";
     mysound.pause();
+  } else {
+    play.textContent = "Cancel";
+    play.style.color = "green";
+    dance.textContent = "Silence😟";
+    mysound.play();
   }
   isPlaying = !isPlaying;
 };
