@@ -238,7 +238,10 @@ header .box {
 .about-me p {
   margin-bottom: 2rem;
   font-size: clamp(20px, 1rem, 50px);
-  font-weight: 700;
+  font-weight: 500;
+}
+.about-me .the {
+  word-spacing: 2px;
 }
 .about-me .revealtext {
   opacity: 0.1;

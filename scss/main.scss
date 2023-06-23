@@ -260,7 +260,10 @@ header {
   p {
     margin-bottom: 2rem;
     font-size: clamp(20px, 1rem, 50px);
-    font-weight: 700;
+    font-weight: 500;
+  }
+  .the{
+    word-spacing: 2px;
   }
 
   .revealtext {

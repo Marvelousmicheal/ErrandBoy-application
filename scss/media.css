@@ -223,4 +223,12 @@
   .contact p {
     width: 20rem;
   }
+}
+@media only screen and (max-width: 414px) {
+  .title p {
+    width: 250%;
+  }
+  .project main p {
+    width: 25rem;
+  }
 }/*# sourceMappingURL=media.css.map */

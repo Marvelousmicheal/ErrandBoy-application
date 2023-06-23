@@ -238,7 +238,10 @@ header .box {
 .about-me p {
   margin-bottom: 2rem;
   font-size: clamp(20px, 1rem, 50px);
-  font-weight: 700;
+  font-weight: 500;
+}
+.about-me .the {
+  word-spacing: 2px;
 }
 .about-me .revealtext {
   opacity: 0.1;
@@ -724,9 +727,6 @@ header .box {
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 676px) {
-  body {
-    background-color: rgb(218, 183, 29);
-  }
   .aboutcontainer {
     display: flex;
     flex-direction: column;
@@ -774,9 +774,6 @@ header .box {
 /* Extra small devices (phones) */
 @media only screen and (max-width: 576px) and (min-width: 320px) {
   /* Styles for phones */
-  body {
-    background-color: rgb(8, 187, 32);
-  }
   .aboutcontainer {
     display: flex;
     flex-direction: column;
@@ -823,5 +820,13 @@ header .box {
   }
   .contact p {
     width: 20rem;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .title p {
+    width: 250%;
+  }
+  .project main p {
+    width: 25rem;
   }
 }/*# sourceMappingURL=configure.css.map */
