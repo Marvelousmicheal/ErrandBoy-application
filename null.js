@@ -132,16 +132,3 @@ window.addEventListener("scroll", () => {
 });
 
 ///////////////////////////////////////////////
-let heading = document.querySelector(".hire");
-let htmlString = "";
-let headingArray = heading.textContent.split("");
-for (let i = 0; i < headingArray.length; i++) {
-  htmlString += `<span class"revealtext">${headingArray[i]}</span>`;
-}
-heading.innerHTML = htmlString;
-
-spans = [...document.querySelectorAll(".revealtext")];
-
-window.addEventListener("scroll", () => {
-  textreveal();
-});

@@ -1,0 +1,313 @@
+/* Extra large devices (larger desktops) */
+@media only screen and (min-width: 1200px) {
+  /* Styles for larger desktops */
+  .project {
+    height: 145vh;
+  }
+  .contact {
+    p {
+      width: 40rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1022px) and (max-width: 1200px) {
+  /* Styles for large desktops */
+
+  .project {
+    height: 127vh;
+    width: 100vw;
+
+    main {
+      position: relative;
+      background-color: black;
+      color: white;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      .color-animated {
+        left: 35rem;
+      }
+    }
+  }
+  .title {
+    p {
+      width: 150%;
+    }
+  }
+  .contact {
+    p {
+      width: 0rem;
+    }
+  }
+}
+
+/* Large devices (large desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1022px) {
+  /* Styles for large desktops */
+
+  .project {
+    height: 127vh;
+    main {
+      h1 {
+        font-size: 4rem;
+      }
+
+      .color-animated {
+        left: 30rem;
+      }
+    }
+  }
+
+  .reason {
+    h1 {
+      line-height: 2rem;
+    }
+  }
+
+  .title {
+    p {
+      width: 130%;
+    }
+  }
+}
+
+/* Medium devices (desktops) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Styles for desktops */
+  .aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .image {
+      display: none;
+    }
+  }
+  .reasons {
+    height: auto;
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .reason:nth-child(5) {
+    height: 100vh;
+  }
+  .project {
+    height: 115vh;
+
+    main {
+      h1 {
+        font-size: 2rem;
+      }
+      .hold,
+      p,
+      h5 {
+        z-index: 2;
+      }
+
+      .color-animated {
+        left: 20rem;
+      }
+    }
+  }
+
+  .gif {
+    width: 95%;
+    height: 50%;
+  }
+  .title {
+    p {
+      width: 170%;
+    }
+  }
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 676px) and (max-width: 768px) {
+  /* Styles for tablets */
+
+  .aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .image {
+      display: none;
+    }
+  }
+
+  .reasons {
+    height: auto;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .project {
+    height: 100vh;
+
+    main {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .hold,
+      p,
+      h5 {
+        z-index: 2;
+      }
+
+      .color-animated {
+        left: 15rem;
+      }
+    }
+  }
+  .title {
+    p {
+      width: 182%;
+    }
+  }
+}
+
+// Extra-screen
+@media only screen and (min-width: 576px) and (max-width: 676px) {
+
+
+  .aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .image {
+      display: none;
+    }
+  }
+
+  .title {
+    p {
+      width: 182%;
+    }
+  }
+
+  .reasons {
+    height: auto;
+
+    h1 {
+      margin-bottom: 1rem;
+      letter-spacing: 0;
+    }
+  }
+  .project {
+    height: 90vh;
+
+    main {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .hold,
+      h1,
+      p,
+      h5 {
+        z-index: 2;
+      }
+
+      .color-animated {
+        left: 5rem;
+      }
+    }
+  }
+  .contact {
+    height: 80vh;
+  }
+
+  .time-box {
+    left: 0;
+    top: 47rem;
+  }
+
+  .contact {
+    p {
+      width: 32rem;
+    }
+  }
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 576px) and (min-width:320px) {
+  /* Styles for phones */
+ 
+
+    .aboutcontainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  
+      .image {
+        display: none;
+      }
+    }
+  
+    .title {
+      p {
+        width: 200%;
+      }
+    }
+  
+    .reasons {
+      height: auto;
+  
+      h1 {
+        margin-bottom: 1rem;
+        letter-spacing: 0;
+        
+      }
+      .reason{
+        h1{
+          font-size: 4rem;
+        }
+      }
+    }
+  
+    .project {
+      height: 90vh;
+  
+      main {
+        h1 {
+          font-size: 2rem;
+        }
+  
+        .hold,
+        h1,
+        p,
+        h5 {
+          z-index: 2;
+        }
+  
+        .color-animated {
+          width: 22rem;
+            height: 30rem;
+          left: 0rem;
+        }
+      }
+    }
+  
+    .contact {
+      height: 80vh;
+    }
+  
+    .time-box {
+      visibility: hidden;
+    }
+  
+    .contact {
+      p {
+        width: 20rem;
+      }
+    }
+}

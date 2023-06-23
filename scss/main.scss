@@ -1,15 +1,56 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+
 }
 .container {
   position: relative;
-  width: 95%;
+  width: 92%;
 
   margin: 0 auto;
 }
+
+.email {
+  border: 1px solid black;
+  position: relative;
+  border-radius: 10px;
+overflow: hidden;
+  width: fit-content;
+
+  padding: 1rem;
+
+  p {
+    font-size: 1rem;
+  }
+}
+.email::before{
+  content: "Hire me";
+  background-color: black;
+  position: absolute;
+  top:60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: ease-in-out 0.5s ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.email:hover::before{
+  top: 0;
+}
+///////////////////////////////////
 header {
   position: relative;
   width: 100%;
@@ -75,9 +116,9 @@ header {
   .title {
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem;
-
+    padding-top: 5rem; 
     text-transform: uppercase;
+   
     h1 {
       font-weight: 800;
       font-size: 4rem;
@@ -93,15 +134,16 @@ header {
       font-size: 1rem;
       font-weight: 600;
       margin-bottom: 1rem;
-      width: 40rem;
+     padding-right: 36rem;
       line-height: 1.5rem;
+      
     }
     .gif {
       padding: 3rem 1rem 1rem 1rem;
       box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
       margin: 3rem auto 0;
       width: 70%;
-      height: 90vh;
+    
       position: relative;
 
       .dot-main {
@@ -136,17 +178,7 @@ header {
       }
     }
   }
-  .email {
-    border: 1px solid black;
-    border-radius: 10px;
-
-    width: fit-content;
-
-    padding: 1rem;
-    p {
-      font-size: 1rem;
-    }
-  }
+  
   .time-box {
     display: flex;
     position: absolute;
@@ -176,9 +208,11 @@ header {
       height: 100%;
       width: 100%;
       display: flex;
+      gap: 2rem;
 
       .image {
-        width: 60%;
+        width: 100%;
+        height: 700px;
         background-color: black;
         img {
           width: 100%;
@@ -187,8 +221,8 @@ header {
       }
 
       .aboutmain {
-        width: 45%;
-        margin-left: 2rem;
+        width: 100%;
+        
         header {
           p {
             position: relative;
@@ -258,7 +292,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    filter: b;
 
     h1 {
       font-size: 7rem;
@@ -268,7 +301,8 @@ header {
       font-weight: 800;
     }
     p {
-      padding: 1rem 13rem;
+      width: 90%;
+      margin: 0 auto;
       line-height: 20px;
     }
   }
@@ -290,7 +324,7 @@ header {
   .reason:nth-child(5) {
     top: 5%;
     background-image: url(/bg5.png);
-    height: 200vh;
+    height: 100vh;
   }
 
   .reason::before {
@@ -305,12 +339,55 @@ header {
     z-index: -1;
   }
 }
+.contact{
+  background-color:#fff;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  color: black;
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    flex-direction: column;
+    
+   
+        p {
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 3rem;
+    
+          margin-bottom: 2rem;
+    
+        }
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .project {
-  height: 100vh;
+ width: 100vw;
 
   h1 {
-    font-size: 10rem;
+    font-size: 12vw;
     font-weight: 900;
     text-transform: uppercase;
     padding-left: 2rem;
@@ -318,24 +395,19 @@ header {
   }
   main {
     background-color: black;
-    height: auto;
-    color: white;
+    height: 150vh;
+color: white;
 
     .container {
       padding-top: 4rem;
       position: relative;
-      height: inherit;
+      
     }
     h1 {
       text-transform: capitalize;
       font-size: 6rem;
-      span {
-        width: 100px;
-        display: inline-block;
-        img {
-          width: 100%;
-        }
-      }
+    position: relative;
+     
     }
     .hold {
       position: absolute;
@@ -355,10 +427,11 @@ header {
       background-color: rgb(218, 52, 52);
       width: 25rem;
       height: 33rem;
-      position: relative;
+      position: inherit;
       overflow: hidden;
-      left: 50rem;
-      top: -9rem;
+      left: 40rem;
+      top: -5rem;
+     
       .img {
         background-image: url(/bg4.jpg);
         width: 100%;
@@ -384,6 +457,28 @@ header {
         filter: hue-rotate(288deg);
       }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @keyframes a {
       from {
